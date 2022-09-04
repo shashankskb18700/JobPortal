@@ -7,7 +7,7 @@
 .header {
   width: 100vw;
   color: rgb(255, 255, 255);
-  background: rgb(214, 13, 60);
+  /* background: rgb(214, 13, 60); */
   /* background: linear-gradient(
     0.25turn,
     rgb(158, 15, 8),
@@ -23,17 +23,26 @@
   font-weight: 400;
   font-size: medium;
 }
+.header:hover {
+  background-color: white;
+  color: black;
+}
 
 .pagesOption {
   display: flex;
   justify-content: space-between;
   width: 20em;
 }
-.header img {
+/* .header img {
   width: fit-content;
   height: 4em;
   filter: drop-shadow(2px 4px 10px rgb(255, 255, 255));
-}
+} */
 .homePageSvg {
   height: 1em;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

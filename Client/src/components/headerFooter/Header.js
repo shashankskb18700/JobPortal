@@ -1,6 +1,7 @@
 import React from "react";
 
 import img1 from "../../Assets/chandigarh-university-seal.png";
+import { ReactComponent as LogoSvg } from "../../Assets/cu-logo.svg";
 
 import { ReactComponent as Svg1 } from "../../Assets/icons/home.svg";
 import { ReactComponent as Svg2 } from "../../Assets/icons/search3.svg";
@@ -10,8 +11,14 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
-      {/* <div> JOB Portal</div> */}
-      <img src={img1}></img>
+      <div className="logo">
+        {/* <span style={{ fontFamily: "sans-serif" }}>CHANDIGARH UNIVERSITY</span> */}
+        <LogoSvg style={{ width: "200px", height: "fit-content" }} />
+        <span style={{ paddingLeft: "1em" }}>
+          | <span style={{ paddingLeft: "1em" }}>CARRERS</span>
+        </span>
+      </div>
+      {/* <img src={img1}></img> */}
       <div className="pagesOption">
         <Svg1 className="homePageSvg" />
         <Svg2 className="homePageSvg" style={{ height: "1.23em" }} />
