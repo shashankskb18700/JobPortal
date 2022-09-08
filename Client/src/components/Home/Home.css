@@ -1,6 +1,6 @@
 .homeHeader {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   /* background: linear-gradient(
     to top,
     rgba(255, 131, 195, 0.9),
@@ -10,3 +10,32 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.homeTrendingJobs::before {
+  background-image: repeating-linear-gradient(
+    -24deg,
+    transparent,
+    transparent 4px,
+    rgba(255, 255, 255, 0.5) 0,
+    rgba(255, 255, 255, 0.5) 5px
+  );
+}
+
+.homeTrendingJobs {
+  width: 100vw;
+  height: 50vh;
+  margin-top: 10rem;
+  background: rgb(255, 0, 0);
+  /* background-image: repeating-linear-gradient(
+    -24deg,
+    transparent,
+    transparent 4px,
+    rgba(236, 15, 15, 0.5) 0,
+    rgba(219, 21, 21, 0.514) 5px
+  ); */
+  color: white;
+  padding: 1em;
+}
+/* .tags {
+  color: white;
+} */

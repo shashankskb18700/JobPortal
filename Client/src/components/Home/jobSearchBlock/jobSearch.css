@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+.jobSearchContainer {
+  color: red;
+  /* background: rgb(250, 244, 243); */
+
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  /* font-size: 1em; */
+}
+.jobSearchContainer .quote {
+  margin-top: 10rem;
+  width: 90vw;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2em;
+  font-family: "Dosis";
+}
+
+.jobSearchContainer input {
+  border: none;
+  width: 70vw;
+  height: 1.6em;
+  font-size: 2rem;
+  padding-left: 0.5em;
+  /* border-radius: 0.2em; */
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+}
+
+.jobSearchContainer .searchButton {
+  height: 2.6em;
+  width: 4em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border: none;
+  background: red;
+  color: white;
+  font-family: "Dosis";
+  font-size: 1.3rem;
+}
+
+.searchButton:hover {
+  background: rgb(248, 96, 96);
+}
+.SearchBar {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.trendingKeyword {
+  display: flex;
+  margin-top: 5vh;
+  color: white;
+  min-width: 40vw;
+  font-family: "Dosis";
+
+  max-height: 30%;
+  align-items: center;
+  justify-content: space-around;
+}
+.trendingKeyword div {
+  width: 50%;
+}
+.trendingKeyword button {
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; */
+  font-family: "Dosis";
+  font-size: 0.8rem;
+}
+.tag {
+  margin: 1em;
+  border: none;
+  background-color: red;
+  padding: 1em;
+  transition: all 0.6s;
+}
+.tag:hover {
+  background: white;
+  color: red;
+}

@@ -14,6 +14,31 @@
     #f0a0a0,
     rgb(158, 15, 7)
   ); */
+  transition: all 0.6s;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em 0 1em;
+  align-items: center;
+  font-family: "Arvo";
+  font-weight: 400;
+  font-size: 1rem;
+  position: fixed;
+}
+.header:hover,
+.sticky {
+  background-color: white;
+  color: black;
+  fill: white;
+}
+
+.homePageSvg {
+  fill: black;
+}
+/* .sticky {
+  background-color: white;
+  color: black;
+
   height: 4.5rem;
   display: flex;
   justify-content: space-between;
@@ -22,16 +47,13 @@
   font-family: "Arvo";
   font-weight: 400;
   font-size: medium;
-}
-.header:hover {
-  background-color: white;
-  color: black;
-}
+  position: fixed;
+} */
 
 .pagesOption {
   display: flex;
   justify-content: space-between;
-  width: 20em;
+  width: 20vw;
 }
 /* .header img {
   width: fit-content;

@@ -1,0 +1,31 @@
+.trendingJobs {
+  /* width: 100vw; */
+  height: fit-content;
+  /* margin: 0 5vw 0 5vw; */
+  font-family: "Dosis";
+  /* background: #ff0000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.trendingJobs div {
+  /* width: 90vw; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.jobs {
+  width: 5vw;
+  height: 14vw;
+  background: white;
+  color: red;
+  margin: 2em;
+}
+
+@media (max-width: 700px) {
+  .trendingJobs div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

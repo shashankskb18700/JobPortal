@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./jobSearch.css";
 
-import { ReactComponent as SearchSvg } from "../../Assets/icons/search3.svg";
+import { ReactComponent as SearchSvg } from "../../../Assets/icons/search3.svg";
 
 const arr = [
   "All our dreams can come true—if we have the courage to pursue them. —Walt Disney",
@@ -34,7 +34,25 @@ const JobSearch = () => {
 
       <div className="SearchBar">
         <input type="text" onChange={(e) => onChange(e)} value={input}></input>
-        <button onClick={(e) => setInput(e.target.value)}>Search</button>
+        <button
+          onClick={(e) => setInput(e.target.value)}
+          className="searchButton"
+        >
+          Search
+        </button>
+      </div>
+      <div className="trendingKeyword">
+        <h2>Trending Keyword</h2>
+        <div>
+          <button className="tag">Software Developer</button>
+          <button className="tag">Web developer</button>
+          <button className="tag">Program manager</button>
+          <button className="tag">Data analysis</button>
+          <button className="tag">Film maker</button>
+          <button className="tag">web designer</button>
+          <button className="tag">Graphic designer</button>
+          <button className="tag">Application developer</button>
+        </div>
       </div>
     </div>
   );
